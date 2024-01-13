@@ -1,0 +1,27 @@
+
+.salutation_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.sub_text{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.top_container {
+  min-height: 180px;
+  min-width: 100%;
+  background: linear-gradient(
+    135deg,
+    #e32182 0%,
+    #944adb 100%
+  );
+  padding: 12px 12px 20px 28px;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

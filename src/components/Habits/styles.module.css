@@ -1,0 +1,17 @@
+.habits_container{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.progress_container{
+   margin: 16px 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.progress_percentage{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}

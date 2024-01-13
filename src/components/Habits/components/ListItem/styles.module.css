@@ -1,0 +1,13 @@
+.listitem_container{
+    display: flex;
+    align-items: center;
+}
+
+.title_description{
+    margin: 0px 0px 10px 12px;
+}
+
+.description{
+    font-size: 12px;
+    
+}
