@@ -1,0 +1,16 @@
+.label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .error_message {
+    color: #ffa69e;
+    font-size: 12px;
+  }
+
+  .input_group {
+    margin-bottom: 14px;
+  }

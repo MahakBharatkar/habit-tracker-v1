@@ -1,8 +1,9 @@
-import { Button, Fab, LinearProgress, Modal, Typography } from "@mui/material";
+import { Fab, LinearProgress, Modal, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import styles from "./styles.module.css";
 import ListItem from "./components/ListItem";
 import { useEffect, useState } from "react";
+import AddHabits from "./components/AddHabit";
 const dummyHabits = [
   {
     id: 1,
@@ -89,16 +90,11 @@ const Habits = () => {
         aria-describedby="modal-modal-description"
       >
         <div className={styles.modal_container}>
-          <span>Add New Habit</span>
+          {/* <span>Add New Habit</span> */}
+          <AddHabits setShowModal={setShowModal} setHabits={setHabits} />
 
           {/* Todo: When onClick of submit of the the add habit. give id by uuid and title, 
           description as entered. But always mark the completed as false initially */}
-
-          <div>
-            <Button variant="outlined" onClick={() => setShowModal(false)}>
-              Close
-            </Button>
-          </div>
         </div>
       </Modal>
     </div>
