@@ -22,6 +22,13 @@
   padding: 12px 12px 20px 28px;
   border-radius: 0 0 30px 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 }

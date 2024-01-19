@@ -23,3 +23,8 @@
     background: #ece4f0;
     box-shadow: 24px;
 }
+
+.fab_container{
+    display: flex;
+    justify-content: center;
+}

@@ -76,6 +76,7 @@ const Habits = () => {
         return <ListItem key={item.id} item={item} setHabits={setHabits} />;
       })}
 
+      <div className={styles.fab_container}>
       <Fab
         aria-label="add"
         color="secondary"
@@ -84,17 +85,16 @@ const Habits = () => {
         <AddIcon />
       </Fab>
 
+      </div>
+      
+
       <Modal
         open={showModal}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <div className={styles.modal_container}>
-          {/* <span>Add New Habit</span> */}
           <AddHabits setShowModal={setShowModal} setHabits={setHabits} />
-
-          {/* Todo: When onClick of submit of the the add habit. give id by uuid and title, 
-          description as entered. But always mark the completed as false initially */}
         </div>
       </Modal>
     </div>
