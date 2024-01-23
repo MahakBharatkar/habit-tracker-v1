@@ -92,6 +92,9 @@ const Habits = () => {
         open={showModal}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        PaperProps={{
+          style: { borderRadius: 20 }
+        }}
       >
         <div className={styles.modal_container}>
           <AddHabits setShowModal={setShowModal} setHabits={setHabits} />

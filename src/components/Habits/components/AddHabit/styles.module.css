@@ -1,7 +1,7 @@
 .label {
     display: block;
     margin-bottom: 5px;
-    color: #717171;
+    color: #444444;
     font-weight: 500;
     font-size: 14px;
   }
@@ -13,4 +13,28 @@
 
   .input_group {
     margin-bottom: 14px;
+  }
+
+  .input_group textarea {
+    resize: none;
+    width: 80%;
+    padding: 6px;
+    border: 1px solid #8d8c8c;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+
+  .input_group input {
+    padding: 6px;
+    border: 1px solid #8d8c8c;
+    border-radius: 6px;
+  }
+
+  .inner_modal_container{
+    padding: 20px;
+  }
+
+  .button_container{
+    display: flex;
+    justify-content: flex-end;
   }

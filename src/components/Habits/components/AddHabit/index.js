@@ -4,7 +4,7 @@ import controls from "./controls";
 import { v4 as uuidv4 } from "uuid";
 import getFieldController from "./getFieldController";
 import styles from "./styles.module.css";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 const AddHabits = ({ setShowModal = () => {}, setHabits = () => {} }) => {
   const {
@@ -29,8 +29,8 @@ const AddHabits = ({ setShowModal = () => {}, setHabits = () => {} }) => {
   };
 
   return (
-    <div>
-      <span>Add new habit</span>
+    <div className={styles.inner_modal_container}>
+      <Typography variant="subtitle2" color="#444444" marginBottom={1.5}>Add new habit</Typography>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         {controls.map((controlItem) => {
@@ -56,11 +56,11 @@ const AddHabits = ({ setShowModal = () => {}, setHabits = () => {} }) => {
           );
         })}
 
-        <div>
-          <Button variant="outlined" onClick={() => setShowModal(false)}>
+        <div className={styles.button_container}>
+          <Button variant="outlined" onClick={() => setShowModal(false)} sx={{color: '#944adb', border: '1px solid #944adb'}}>
             Close
           </Button>
-          <Button variant="contained" type="submit">
+          <Button variant="contained" type="submit" sx={{marginLeft: '10px', backgroundColor: '#944adb'}}>
             Submit
           </Button>
         </div>
